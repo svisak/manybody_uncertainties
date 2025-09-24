@@ -26,7 +26,7 @@ To produce all figures in the paper, simply execute the `analysis.sh` script. Th
 
 `run.py` is the main user-facing script and is typically invoked like `python run.py -m`, where `-m` indicates the 1.8/2.0 (EM) interaction. The argument can be changed to `-d` for $\Delta$-N<sup>2</sup>LO<sub>GO</sub> or `-e` for 1.8/2.0 (EM7.5). Additional optional arguments are explained in `run.py`. Use `-n` to set the number of MCMC samples, for example to 100000 (the default is 1 million).
 
-The input MBPT data is located in the `data` folder, where the `.csv` files contain results for finite nuclei for the three different chiral interactions, the 1.8/2.0 (EM), $\Delta$-N<sup>2</sup>LO<sub>GO</sub>, and 1.8/2.0 (EM7.5) interactions. The `.h5` files contain MBPT results for symmetric nuclear matter (SNM) and pure neutron matter (PNM), calculated with 1.8/2.0 (EM).
+The input MBPT data is located in the `data` folder, where the `.csv` files contain results for finite nuclei for the three different chiral interactions, the 1.8/2.0 (EM), $\Delta$-N<sup>2</sup>LO<sub>GO</sub>, and 1.8/2.0 (EM7.5) interactions. These were calculated in P. Arthuis et al., "Neutron-rich nuclei and neutron skins from chiral low-resolution interactions", arXiv:2401.06675 (2024). The `.h5` files contain MBPT results for symmetric nuclear matter (SNM) and pure neutron matter (PNM), calculated with 1.8/2.0 (EM) in F. Alp, Y. Dietz et al., "Equation of state and Fermi liquid properties of dense matter based on chiral EFT interactions, arXiv:2504.18259 (2025).
 
 `run.py` calls functions in additional Python files which actually perform the analysis. These are `inout.py` (input and output), `bayesian.py` (calculations and statistical methods), and `plotting.py` (figures).
 
