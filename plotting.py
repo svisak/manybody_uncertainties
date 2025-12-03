@@ -181,7 +181,7 @@ def empirical_coverage_setup(num_axes):
         # Labels, limits, ticks
         ax.set_xlim(0,100)
         ax.set_ylim(0,100)
-        ax.set_xlabel(r'$p \times 100\%$')
+        ax.set_xlabel(r'$p$ (\%)')
         ticksetup(ax)
         ax.set_aspect('equal')
 
